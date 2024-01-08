@@ -169,7 +169,7 @@ public class App {
 			System.out.println("==수정==");
 			System.out.print("새 제목 : ");
 			String title = sc.nextLine().trim();
-			System.out.println("새 내용 : ");
+			System.out.print("새 내용 : ");
 			String body = sc.nextLine().trim();
 
 			PreparedStatement pstmt = null;
