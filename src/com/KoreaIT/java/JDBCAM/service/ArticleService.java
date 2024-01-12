@@ -18,19 +18,15 @@ public class ArticleService {
 	public int doWrite(String title, String body) {
 		return articleDao.doWrite(title, body);
 	}
-
 	public Map<String, Object> getArticleById(int id) {
 		return articleDao.getArticleById(id);
 	}
-
 	public void doDelete(int id) {
 		articleDao.doDelete(id);
 	}
-
 	public void doUpdate(int id, String title, String body) {
 		articleDao.doUpdate(id, title, body);
 	}
-
 	public List<Article> getArticles() {
 		return articleDao.getArticles();
 	}
