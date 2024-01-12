@@ -9,14 +9,14 @@ public class ArticleService {
 	public ArticleService() {
 		this.articleDao = Container.articleDao;
 	}
-
 	public int doWrite(int memberId, String title, String body) {
 		return articleDao.doWrite(memberId,title, body);
 	}
 
-	public Map<String, Object> getArticleById(int id) {
+	public Article getArticleById(int id) {
 		return articleDao.getArticleById(id);
 	}
+
 	public void doDelete(int id) {
 		articleDao.doDelete(id);
 	}
