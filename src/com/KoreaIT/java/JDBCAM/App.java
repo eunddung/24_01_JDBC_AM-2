@@ -52,7 +52,6 @@ public class App {
 		}
 		MemberController memberController = Container.memberController;
 		ArticleController articleController = Container.articleController;
-
 		if (cmd.equals("member logout")) {
 			memberController.logout();
 		} else if (cmd.equals("member profile")) {
@@ -63,8 +62,8 @@ public class App {
 			memberController.doJoin();
 		} else if (cmd.equals("article write")) {
 			articleController.doWrite();
-		} else if (cmd.equals("article list")) {
-			articleController.showList();
+		} else if (cmd.startsWith("article list")) {
+			articleController.showList(cmd);
 		} else if (cmd.startsWith("article modify")) {
 			articleController.doModify(cmd);
 		} else if (cmd.startsWith("article detail")) {
